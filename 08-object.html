@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+
+
+    <script>
+        /*
+       const prod = {
+        name : 'socks',
+        price : 1090
+       } ;
+
+       console.log(prod);
+       console.log(prod.name);
+       console.log(prod.price);
+
+       prod.name = 'cotton socks';
+       console.log(prod);
+
+       // add new property
+       prod.newproperty = "shirt";
+       console.log(prod);
+
+       //delete the item
+       delete prod.newproperty;
+       console.log(prod);
+       */
+
+       /*
+       const prod2 ={
+        name : 'shirt',
+        'delivery-time' : '1 day',
+        rating:{
+            stars:4.5,
+            count:87
+        },
+        fun: function fun1(){
+            console.log('function inside objsct');
+            
+        }
+       };
+       console.log(prod2);
+
+       console.log(prod2.name);
+
+       // obtaining value using bracket notation
+       console.log(prod2['name']);
+
+       console.log(prod2['delivery-time']);
+
+       console.log(prod2.rating.count);
+
+       console.log(prod2.fun());
+       
+       
+       // converting object into json(javascript object notation)
+       // becouse json use in almost all language
+
+       console.log(JSON.stringify(prod2));
+       console.log(typeof JSON.stringify(prod2));
+
+
+       // converting json into js object
+        const jsonString = JSON.stringify(prod2);
+        console.log(JSON.parse(jsonString));
+        console.log(typeof JSON.parse(jsonString));
+
+        */
+        
+       // object are store in memory and we get its refrenses
+
+       console.log('hellow'.length);
+       console.log('hellow'.toUpperCase());
+
+       // obj1 store in localmemory and humko refrense k hissab se ans milta hai
+       const obj1 ={
+        message: 'hellow'
+       };
+
+       const obj2 = obj1;
+      
+       
+       
+       // both obj1 and obj2 are reffer to where object is store
+       obj1.message = 'Good Job';
+       console.log(obj1);
+       console.log(obj2);
+
+        
+
+       // no 2 object are equal even its all item are equal
+       
+       obj3={
+        message: 'Good Job'
+       };
+
+       console.log(obj3===obj1);
+
+       // object are refrenses
+       
+       
+    </script>
+</body>
+</html>

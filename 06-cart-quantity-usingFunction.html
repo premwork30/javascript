@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart-quentity-usingFunction</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button onclick="updateCart(1)">Add to Cart</button>
+
+    <button onclick="updateCart(2)">+2</button>
+
+    <button onclick="updateCart(3)">+3</button>
+
+    <button onclick="updateCart(4)">+4</button>
+
+    <button onclick="updateCart(5)">+5</button>
+
+    <button onclick="updateCart(-1)">Remove from Cart</button>
+
+    <button onclick="updateCart(-2)">-2</button>
+
+    <button onclick="updateCart(-3)">-3</button>
+
+
+
+    <script>
+        let cartQuantity = 0;
+        const cartQuantityMax = 10;
+
+        function updateCart(quantity) {
+
+            if (cartQuantity + quantity > cartQuantityMax) {
+                alert('The cart is full');
+                return;
+            }
+
+            if (cartQuantity + quantity < 0) {
+                alert('Not enough items in the cart');
+                return;
+            }
+
+            cartQuantity += quantity;
+
+            console.log(`Cart quantity: ${cartQuantity}`);
+        }
+    </script>
+    
+</body>
+</html>
